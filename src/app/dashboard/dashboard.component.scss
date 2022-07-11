@@ -87,7 +87,7 @@
     flex-grow: 0;
 
     h5 {
-      position: absolute;
+      // position: absolute;
       // width: 110px;
       height: 27px;
       left: 24px;
@@ -103,7 +103,7 @@
     }
 
     h3 {
-      position: absolute;
+      // position: absolute;
       // width: 73px;
       height: 34px;
       left: 24px;
@@ -121,6 +121,53 @@
   }
 }
 
-#card1 { order: 0; }
-#card2 { order: 1; }
-#card3 { order: 2; }
+.title-2 {
+  position: absolute;
+  width: 159px;
+  height: 36px;
+  left: 36px;
+  top: 283px;
+
+  // font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+
+  color: #373F47;
+}
+
+.filter-search {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0px;
+  gap: 12px;
+
+  position: absolute;
+  width: 239px;
+  height: 40px;
+  left: 924px;
+  top: 279px;
+
+  .search-input {
+    box-sizing: border-box;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 16px;
+    gap: 77px;
+
+    width: 239px;
+    height: 40px;
+
+    border: 1px solid #EAECEE;
+    border-radius: 32px;
+    
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+  }
+}
