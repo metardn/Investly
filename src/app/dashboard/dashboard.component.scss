@@ -1,0 +1,126 @@
+.main-container {
+    position: absolute;
+    // width: 1199px;
+    // height: 1235px;
+    left: 241px;
+    top: 0px;
+    // overflow-y: scroll;
+    background: #FFFFFF;
+}
+
+.title {
+  position: absolute;
+  width: 210px;
+  height: 34px;
+  left: 36px;
+  top: 30px;
+  
+  // font-family: 'General Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 120%;
+}
+
+.gray-800 {
+  color: #242D35;
+}
+
+.top-control {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 12px;
+
+  // position: absolute;
+  width: 92px;
+  height: 40px;
+  // right: 80px;
+  // right: 36px;
+  // top: calc(50% - 40px/2 - 573.5px);
+
+  button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    width: 40px;
+    height: 40px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #EAECEE;
+    border-radius: 32px;
+
+    flex: none;
+    flex-grow: 0;
+  }
+}
+
+.metrics {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 0px;
+  gap: 24px;
+
+  position: absolute;
+  width: 1127px;
+  height: 159px;
+  left: 36px;
+  top: 88px;
+
+  .metric-small {
+    box-sizing: border-box;
+    width: 360px;
+    height: 159px;
+
+    background: #FFFFFF;
+
+    border: 1px solid #EAECEE;
+    border-radius: 12px;
+
+    flex: none;
+    flex-grow: 0;
+
+    h5 {
+      position: absolute;
+      // width: 110px;
+      height: 27px;
+      left: 24px;
+      top: 24px;
+
+      // font-family: 'General Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 18px;
+      line-height: 150%;
+
+      color: #373F47;
+    }
+
+    h3 {
+      position: absolute;
+      // width: 73px;
+      height: 34px;
+      left: 24px;
+      bottom: 24px;
+
+      // font-family: 'General Sans';
+      font-style: normal;
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 120%;
+      
+      color: #242D35;
+
+    }
+  }
+}
+
+#card1 { order: 0; }
+#card2 { order: 1; }
+#card3 { order: 2; }
