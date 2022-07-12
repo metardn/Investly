@@ -251,10 +251,8 @@ h4 {
 
   .section-card {
     box-sizing: border-box;
-
     width: 360px;
     height: 86px;
-
     background: #FFFFFF;
     border: 1px solid #EAECEE;
     border-radius: 12px;
@@ -270,34 +268,40 @@ h4 {
       color: #A8B0B9;;
     }
 
-    .section-label {
+    .text-content {
       position: absolute;
-      // width: 81px;
-      height: 14px;
-      left: 72px;
-      top: 20px;
-      // font-family: 'General Sans';
-      font-style: normal;
-      font-weight: 500;
-      font-size: 14px;
-      line-height: 100%;
-      color: #373F47;
+      width: 250px;
+
+      .section-label {
+        position: absolute;
+        height: 14px;
+        left: 72px;
+        top: 20px;
+        // font-family: 'General Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 100%;
+        color: #373F47;
+      }
+  
+      .section-body {
+        position: absolute;
+        // width: 64px;
+        height: 24px;
+        left: 72px;
+        top: 42px;
+  
+        // font-family: 'General Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 150%;
+        color: #4F5B67;
+      }
     }
 
-    .section-body {
-      position: absolute;
-      width: 64px;
-      height: 24px;
-      left: 72px;
-      top: 42px;
-
-      // font-family: 'General Sans';
-      font-style: normal;
-      font-weight: 400;
-      font-size: 16px;
-      line-height: 150%;
-      color: #4F5B67;
-    }
+    
   }
 }
 
@@ -327,7 +331,7 @@ h4 {
 
     img {
       position: absolute;
-      width: 759px;
+      width: 727px;
       height: 336px;
       left: 0px;
       top: -16px;
