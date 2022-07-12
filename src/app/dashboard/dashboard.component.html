@@ -9,18 +9,24 @@
       <div class="metric-content">
         <h5 class="metric-name">Todays sales</h5>
         <h3 class="metric-amount">2,456</h3>
+        <div class="visualisation" echarts [options]="option1"></div>
+        <i class="bi bi-arrow-up-right green-icon"></i>
       </div>
     </div>
     <div class="metric-small">
       <div class="metric-content">
         <h5 class="metric-name">New Product</h5>
         <h3 class="metric-amount">221</h3>
+        <div class="visualisation" echarts [options]="option2"></div>
+        <i class="bi bi-arrow-right blue-icon"></i>
       </div>
     </div>
     <div class="metric-small">
       <div class="metric-content">
         <h5 class="metric-name">Inventory</h5>
         <h3 class="metric-amount">1,425</h3>
+        <div class="visualisation" echarts [options]="option3"></div>
+        <i class="bi bi-arrow-down-right red-icon"></i>
       </div>
     </div>
   </div>

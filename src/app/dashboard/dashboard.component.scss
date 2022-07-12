@@ -133,6 +133,27 @@
   
         color: #242D35;
       }
+
+      .visualisation {
+        position: absolute;
+        width: 95px;
+        height: 95px;
+        right: 32px;
+        top: 30px;
+      }
+
+      i {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        right: 62px;
+        top: 66px;
+        opacity: 0.9;
+      }
+
+      .green-icon { color: #2BA52E; }
+      .blue-icon { color: #3333D1; }
+      .red-icon { color: #FF513A; }
     }
   }
 }
