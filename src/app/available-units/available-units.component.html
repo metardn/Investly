@@ -1,1 +1,75 @@
-<p>available-units works!</p>
+<div class="main-container">
+  <div class="main-title">
+    <h3>Available units</h3>
+  </div>
+  <div class="right-top">
+    <button class="new-btn">New listing<i class="bi bi-plus"></i></button>
+    <button class="top-btn"><i class="bi bi-bell"></i></button>
+    <button class="top-btn"><i class="bi bi-search"></i></button>
+  </div>
+  <h4 class="title-1">Your favorites</h4>
+  <div class="micro-tiles">
+    <div class="card">
+      <img [src]="images[0]">
+      <div class="text-content">
+        <p>Shoreditch Apt</p>
+        <small>10 December 2022</small>
+      </div>
+    </div>
+    <div class="card">
+      <img [src]="images[1]">
+      <div class="text-content">
+        <p>Shoreditch Apt</p>
+        <small>10 December 2022</small>
+      </div>
+    </div>
+    <div class="last-card">
+      <div class="card">
+        <img [src]="images[2]">
+        <div class="text-content">
+          <p>Shoreditch Apt</p>
+          <small>10 December 2022</small>
+        </div>
+      </div>
+      <div class="fade-space"></div>
+      <button><i class="bi bi-chevron-right"></i></button>
+    </div>
+  </div>
+  <h4 class="title-2">All listings</h4>
+  <div class="control-left">
+    <button class="control-left-item c-left-btn">Filter by<i class="bi bi-filter"></i></button>
+    <button class="control-left-item c-left-btn">Sort by<i class="bi bi-filter-left"></i></button>
+    <form class="control-left-item search-input">
+      <input type="text" placeholder="Try 'Miami beachhouse'">
+      <i class="bi bi-search"></i>
+    </form>
+  </div>
+  <div class="control-right">
+    <button class="btn-customize">Customize<i class="bi bi-gear"></i></button>
+    <button class="btn-more"><i class="bi bi-three-dots-vertical"></i></button>
+  </div>
+  <div class="listings" *ngFor="let listing of listings">
+    <div [class]="listing.card" class="card">
+      <img [src]="listing.image" alt="">
+      <div class="text-content">
+        <h5>{{ listing.name }}</h5>
+        <small>{{ listing.desc }}</small>
+      </div>
+      <div class="meta-data">
+        <div class="data">
+          <i class="bi bi-geo-alt"></i>
+          <small>Boston</small>
+        </div>
+        <div class="data">
+          <i class="bi bi-vr"></i>
+          <small>5 bedroom</small>
+        </div>
+        <div class="data">
+          <i class="bi bi-building"></i>
+          <small>Villa</small>
+        </div>
+      </div>
+      <button>View listing details</button>
+    </div>
+  </div>
+</div>
