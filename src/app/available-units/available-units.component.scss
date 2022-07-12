@@ -258,6 +258,20 @@ h4 {
       border: none;
     }
 
+    input::placeholder {
+      width: 154px;
+
+      // font-family: 'General Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 100%;
+      color: #D6DADE;
+      flex: none;
+      order: 0;
+      flex-grow: 0;
+    }
+
     input:focus-within {
       outline: none;
     }
