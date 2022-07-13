@@ -101,7 +101,7 @@
 
 .control-bar {
   position: absolute;
-  width: 1290px;
+  width: 1260px;
   height: 72px;
   left: 0px;
   top: 88px;
@@ -246,15 +246,21 @@ table {
     }
 
     tr td {
-      // align-items: center;
       padding: 20px 36px 19px 24px;
       box-shadow: inset 0px -1px 0px #F1F1F1;
 
-      img {
+      .logo {
         background: #373F47;
         width: 32px;
         height: 32px;
         padding: 5px;
+      }
+
+      .contributor {
+        width: 32px;
+        height: 32px;
+        border: 2px solid #D8D8FE;
+        margin-right: -12px;
       }
     }
   }

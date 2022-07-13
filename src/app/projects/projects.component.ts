@@ -13,7 +13,10 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "cancel-badge",
       "brand" : "Tesla",
       "brand_logo" : "assets/client/tesla.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-2.jpg",
+        "assets/user-ava/user-ava-1.jpg"
+      ],
       "type" : "New build",
       "type_badge" : "new-type",
       "due_date" : "Thu 12 Dec"
@@ -24,7 +27,12 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "review-badge",
       "brand" : "Nike Athletic",
       "brand_logo" : "assets/client/nike.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-4.jpg",
+        "assets/user-ava/user-ava-1.jpg",
+        "assets/user-ava/user-ava-3.jpg",
+        "assets/user-ava/user-ava-5.jpg"
+      ],
       "type" : "Reconstruction",
       "type_badge" : "reconstruction",
       "due_date" : "Thu 12 Dec"
@@ -35,7 +43,10 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "progress-badge",
       "brand" : "Sony",
       "brand_logo" : "assets/client/sony.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-2.jpg",
+        "assets/user-ava/user-ava-1.jpg"
+      ],
       "type" : "Commercial",
       "type_badge" : "commercial",
       "due_date" : "Wed 04 Dec"
@@ -46,7 +57,13 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "progress-badge",
       "brand" : "Apple",
       "brand_logo" : "assets/client/apple.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-4.jpg",
+        "assets/user-ava/user-ava-2.jpg",
+        "assets/user-ava/user-ava-3.jpg",
+        "assets/user-ava/user-ava-5.jpg",
+        "assets/user-ava/user-ava-1.jpg"
+      ],
       "type" : "Residential",
       "type_badge" : "residential",
       "due_date" : "Tue 03  Dec"
@@ -57,7 +74,10 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "review-badge",
       "brand" : "Apple",
       "brand_logo" : "assets/client/apple.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-2.jpg",
+        "assets/user-ava/user-ava-1.jpg"
+      ],
       "type" : "Commercial",
       "type_badge" : "commercial",
       "due_date" : "Mon 15 Jan"
@@ -68,7 +88,11 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "review-badge",
       "brand" : "Nike Athletic",
       "brand_logo" : "assets/client/nike.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-2.jpg",
+        "assets/user-ava/user-ava-1.jpg",
+        "assets/user-ava/user-ava-3.jpg"
+      ],
       "type" : "Commercial",
       "type_badge" : "commercial",
       "due_date" : "Thu 21 Oct"
@@ -79,7 +103,10 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "progress-badge",
       "brand" : "Sony",
       "brand_logo" : "assets/client/sony.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-2.jpg",
+        "assets/user-ava/user-ava-1.jpg"
+      ],
       "type" : "Residential",
       "type_badge" : "residential",
       "due_date" : "Wed 20 Sep"
@@ -90,7 +117,12 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "review-badge",
       "brand" : "Apple",
       "brand_logo" : "assets/client/apple.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-4.jpg",
+        "assets/user-ava/user-ava-1.jpg",
+        "assets/user-ava/user-ava-3.jpg",
+        "assets/user-ava/user-ava-5.jpg"
+      ],
       "type" : "Reconstruction",
       "type_badge" : "reconstruction",
       "due_date" : "Mon 01 Feb"
@@ -101,7 +133,10 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "review-badge",
       "brand" : "Reebok",
       "brand_logo" : "assets/client/reebok.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-2.jpg",
+        "assets/user-ava/user-ava-1.jpg"
+      ],
       "type" : "Residential",
       "type_badge" : "residential",
       "due_date" : "Sat 13 May"
@@ -112,7 +147,13 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "approved-badge",
       "brand" : "Sony",
       "brand_logo" : "assets/client/sony.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-4.jpg",
+        "assets/user-ava/user-ava-2.jpg",
+        "assets/user-ava/user-ava-3.jpg",
+        "assets/user-ava/user-ava-5.jpg",
+        "assets/user-ava/user-ava-1.jpg"
+      ],
       "type" : "Residential",
       "type_badge" : "residential",
       "due_date" : "Sat 13 May"
@@ -123,7 +164,10 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "review-badge",
       "brand" : "Sony",
       "brand_logo" : "assets/client/sony.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-2.jpg",
+        "assets/user-ava/user-ava-1.jpg"
+      ],
       "type" : "Residential",
       "type_badge" : "residential",
       "due_date" : "Fri 12 May"
@@ -134,7 +178,12 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "review-badge",
       "brand" : "Tesla",
       "brand_logo" : "assets/client/tesla.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-4.jpg",
+        "assets/user-ava/user-ava-1.jpg",
+        "assets/user-ava/user-ava-3.jpg",
+        "assets/user-ava/user-ava-5.jpg"
+      ],
       "type" : "Commercial",
       "type_badge" : "commercial",
       "due_date" : "Sun 02 Mar"
@@ -145,7 +194,11 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "approved-badge",
       "brand" : "Tesla",
       "brand_logo" : "assets/client/tesla.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-2.jpg",
+        "assets/user-ava/user-ava-1.jpg",
+        "assets/user-ava/user-ava-3.jpg"
+      ],
       "type" : "Commercial",
       "type_badge" : "commercial",
       "due_date" : "Tue 26 Jun"
@@ -156,7 +209,11 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "approved-badge",
       "brand" : "Sony",
       "brand_logo" : "assets/client/sony.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-2.jpg",
+        "assets/user-ava/user-ava-1.jpg",
+        "assets/user-ava/user-ava-3.jpg"
+      ],
       "type" : "New build",
       "type_badge" : "new-type",
       "due_date" : "Fri 02 Jan"
@@ -167,7 +224,10 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "approved-badge",
       "brand" : "Sony",
       "brand_logo" : "assets/client/sony.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-2.jpg",
+        "assets/user-ava/user-ava-1.jpg"
+      ],
       "type" : "New build",
       "type_badge" : "new-type",
       "due_date" : "Thu 01 Jan"
@@ -178,7 +238,10 @@ export class ProjectsComponent implements OnInit {
       "status_type" : "progress-badge",
       "brand" : "Sony",
       "brand_logo" : "assets/client/sony.png",
-      "contributors" : [],
+      "contributors" : [
+        "assets/user-ava/user-ava-2.jpg",
+        "assets/user-ava/user-ava-1.jpg"
+      ],
       "type" : "Commercial",
       "type_badge" : "commercial",
       "due_date" : "Sun 02 Mar"

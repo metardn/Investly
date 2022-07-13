@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./sidebar.component.scss']
 })
 export class SidebarComponent implements OnInit {
-  ava = "assets/user-ava.jpg"
+  ava = "assets/user-ava/user-ava-1.jpg"
 
   constructor() { }
 
