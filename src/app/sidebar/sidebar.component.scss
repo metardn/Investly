@@ -105,28 +105,52 @@
 ul  li {
   width: 240px;
   height: 48px;
-
   flex: none;
   flex-grow: 0;
   list-style: none;
 
   a {
-    // position: absolute;
-    height: 16px;
-    left: 71px;
     top: calc(50% - 16px/2);
-
-    // font-family: 'General Sans';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 100%;
     color: #4F5B67;
     text-decoration: none;
+
     i {
       color: #A8B0B9;
+      padding-right: 14px;
     }
   }
+  
+  .sub-menu {
+    width: 240px;
+    height: 48px;
+    padding-left: 24px;
+    
+    .choosen-menu {
+      width: 4px;
+      height: 48px;
+      margin-left:auto;
+      margin-right:0;
+    }
+  }
+
+  .sub-menu:hover, .sub-menu:active {
+    background: #F7F7FB;
+    color: #0D0D54;
+
+    i {
+      color: #4040F2;
+    }
+
+    .choosen-menu {
+      background: #4040F2;
+    }
+  }
+
+  
 }
 
 .user-avatar-container {
