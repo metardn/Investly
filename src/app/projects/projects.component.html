@@ -9,11 +9,44 @@
     <button class="nav-btn"><i class="bi bi-search"></i></button>
   </div>
   <div class="control-bar">
-    <button>Filter projects</button>
-    <button>Sort projects</button>
-    <form action=""></form>
-    <button>Refresh</button>
-    <button>Customise</button>
-    <button></button>
+    <div class="control-left">
+      <button class="control-left-item c-left-btn">Filter by<i class="bi bi-filter"></i></button>
+      <button class="control-left-item c-left-btn">Sort by<i class="bi bi-filter-left"></i></button>
+      <form class="control-left-item search-input">
+        <input type="text" placeholder="Try 'Miami beachhouse'">
+        <i class="bi bi-search"></i>
+      </form>
+    </div>
+    <div class="control-right">
+      <button class="btn-customize">Refresh<i class="bi bi-arrow-clockwise"></i></button>
+      <button class="btn-customize">Customize<i class="bi bi-gear"></i></button>
+      <button class="btn-more"><i class="bi bi-three-dots-vertical"></i></button>
+    </div>
   </div>
+  <table>
+    <thead>
+      <tr>
+        <td scope="col"><i class="bi bi-square"></i></td>
+        <td scope="col">Project name<i class="bi bi-arrow-up"></i></td>
+        <td scope="col">Project status</td>
+        <td scope="col">Brand</td>
+        <td scope="col">Contributors</td>
+        <td scope="col">Project type</td>
+        <td scope="col">Due date</td>
+        <td scope="col" class="text-center">Actions</td>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let project of projects">
+        <td><i class="bi bi-square"></i></td>
+        <td><i class="bi bi-person-video3"></i> {{ project.name }}</td>
+        <td><div class="badge-status" [class]="project.status_type">{{ project.status }}</div></td>
+        <td><img [src]="project.brand_logo" class="rounded-circle"> {{ project.brand }}</td>
+        <td>Contributors...</td>
+        <td><div class="badge-status" [class]="project.type_badge">{{ project.type }}</div></td>
+        <td><i class="bi bi-calendar"></i> Thu 12 Dec</td>
+        <td class="text-center"><i class="bi bi-three-dots"></i></td>
+      </tr>
+    </tbody>
+  </table>
 </div>
