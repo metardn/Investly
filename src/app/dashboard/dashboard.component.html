@@ -1,44 +1,44 @@
-<div class="main-container">
-  <h3 class="title-1">Your dashboard</h3>
-  <div class="top-right">
+<div class="main-container position-absolute">
+  <h3 class="title-1 position-absolute">Your dashboard</h3>
+  <div class="top-right position-absolute">
     <button><i class="bi bi-bell d-flex align-items-center"></i></button>
     <button><i class="bi bi-search d-flex align-items-center"></i></button>
   </div>
-  <div class="metrics">
+  <div class="metrics position-absolute">
     <div class="metric-small">
-      <div class="metric-content">
-        <h5 class="metric-name">Todays sales</h5>
-        <h3 class="metric-amount">2,456</h3>
-        <div class="visualisation" echarts [options]="option1"></div>
+      <div class="metric-content position-absolute">
+        <h5 class="metric-name position-absolute">Todays sales</h5>
+        <h3 class="metric-amount position-absolute">2,456</h3>
+        <div class="visualisation position-absolute" echarts [options]="option1"></div>
         <i class="bi bi-arrow-up-right green-icon"></i>
       </div>
     </div>
     <div class="metric-small">
-      <div class="metric-content">
-        <h5 class="metric-name">New Product</h5>
-        <h3 class="metric-amount">221</h3>
-        <div class="visualisation" echarts [options]="option2"></div>
+      <div class="metric-content position-absolute">
+        <h5 class="metric-name position-absolute">New Product</h5>
+        <h3 class="metric-amount position-absolute">221</h3>
+        <div class="visualisation position-absolute" echarts [options]="option2"></div>
         <i class="bi bi-arrow-right blue-icon"></i>
       </div>
     </div>
     <div class="metric-small">
-      <div class="metric-content">
-        <h5 class="metric-name">Inventory</h5>
-        <h3 class="metric-amount">1,425</h3>
-        <div class="visualisation" echarts [options]="option3"></div>
+      <div class="metric-content position-absolute">
+        <h5 class="metric-name position-absolute">Inventory</h5>
+        <h3 class="metric-amount position-absolute">1,425</h3>
+        <div class="visualisation position-absolute" echarts [options]="option3"></div>
         <i class="bi bi-arrow-down-right red-icon"></i>
       </div>
     </div>
   </div>
-  <h4 class="title-2">Your favorites</h4>
-  <div class="filter-search">
+  <h4 class="title-2 position-absolute">Your favorites</h4>
+  <div class="filter-search position-absolute">
     <form class="search-input">
       <input type="text" placeholder="Try 'Miami beachhouse'">
       <i class="bi bi-search d-flex align-items-center"></i>
     </form>
   </div>
-  <div class="listings" *ngFor="let listing of listings">
-    <div [class]="listing.card" class="card">
+  <div class="listings position-absolute" *ngFor="let listing of listings">
+    <div [class]="listing.card" class="card position-absolute">
       <img [src]="listing.image" alt="">
       <div class="text-content">
         <h5>{{ listing.name }}</h5>
