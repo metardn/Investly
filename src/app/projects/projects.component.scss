@@ -1,20 +1,13 @@
 .main-container {
-  position: absolute;
   width: 1220px;
   height: 1024px;
   left: 240px;
-  top: 0px;
-  // overflow-y: scroll;
 }
 
 .nav-main {
-  display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 0px;
   gap: 8px;
-
-  position: absolute;
   width: 256px;
   height: 34px;
   left: 36px;
@@ -23,37 +16,21 @@
   h3 {
     width: 224px;
     height: 34px;
-    // font-family: 'General Sans';
-    font-style: normal;
     font-weight: 600;
     font-size: 28px;
-    line-height: 120%;
     color: #373F47;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
   }
 
   i {
     width: 24px;
     height: 24px;
-    opacity: 0.9;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
     color: #717D8A;
   }
 }
 
 .nav-control {
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
   align-items: center;
-  padding: 0px;
   gap: 12px;
-
-  position: absolute;
   width: 239px;
   height: 40px;
   right: 36px;
@@ -61,31 +38,22 @@
 
   .new-btn {
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 12px 12px 12px 20px;
     gap: 8px;
     width: 135px;
-    height: 40px;
     background: #4040F2;
     border-radius: 32px;
     border: none;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 
     //button font
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 100%;
     color: #FFFFFF;
   }
 
   .nav-btn {
-    box-sizing: border-box;
     display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 12px;
     gap: 8px;
@@ -95,42 +63,28 @@
     border: 1px solid #EAECEE;
     border-radius: 32px;
     flex: none;
-    flex-grow: 0;
   }
 }
 
 .control-bar {
-  position: absolute;
   width: 1240px;
   height: 72px;
-  left: 0px;
   top: 88px;
-  background: #FFFFFF;
   box-shadow: inset 0px 1px 0px #F1F1F1, inset 0px -1px 0px #F1F1F1;
 }
 
-
 .control-left {
-  display: flex;
-  flex-direction: row;
-  padding: 0px;
-  gap: 12px;
-  position: absolute;
+  gap: 12px;  //
   left: 36px;
   top: 16px;
 
   .control-left-item {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 12px 12px 12px 20px;
     height: 40px;
     background: #FFFFFF;
     border: 1px solid #EAECEE;
     border-radius: 32px;
-    flex: none;
-    flex-grow: 0;
   }
 
   .c-left-btn {
@@ -146,17 +100,9 @@
     }
 
     input::placeholder {
-      width: 154px;
-
-      // font-family: 'General Sans';
-      font-style: normal;
       font-weight: 400;
       font-size: 14px;
-      line-height: 100%;
       color: #D6DADE;
-      flex: none;
-      order: 0;
-      flex-grow: 0;
     }
 
     input:focus-within {
@@ -166,26 +112,19 @@
 }
 
 .control-right {
-  display: flex;
-  padding: 0px;
   gap: 8px;
-  position: absolute;
   left: 872px;
   top: 16px;
 
   button {
     box-sizing: border-box;
     display: flex;
-    flex-direction: row;
     align-items: center;
-    // padding: 12px 12px 12px 20px;
     gap: 8px;
     height: 40px;
     background: #FFFFFF;
     border: 1px solid #EAECEE;
     border-radius: 32px;
-    flex: none;
-    flex-grow: 0;
   }
 
   .btn-customize {
@@ -202,19 +141,14 @@ table {
   position: absolute;
   width: 1240px;
   top: 160px;
-  background: #FFFFFF;
   border: 1px solid #EAECEE;
   border-radius: 12px;
 
   thead {
     background: #FAFAFA;
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 100%;
-    text-align: justify;
     color: #4F5B67;
-    width: 1127px;
     
     tr td {
       align-items: center;
@@ -223,26 +157,18 @@ table {
 
       i {
         color: #A8B0B9;
-        width: 16px;
-        height: 16px;
+        font-size: 12px;
       }
     }
   }
 
   tbody {
-    background: #FFFFFF;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 150%;
-    color: #000000;
-
     
     i {
       color: #A8B0B9;
-      width: 16px;
       font-size: 12px;
-      height: 16px;
     }
 
     tr td {
@@ -273,32 +199,28 @@ table {
   border-radius: 12px;
 
   //badge font 
-  font-style: normal;
+  color: #FFFFFF;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;
 }
 
 .review-badge {
-  color: #FFFFFF;
   width: 69px;
   background: #FFCF0F;
 }
 
 .progress-badge {
-  color: #FFFFFF;
   width: 83px;
   background: #4040F2;
 }
 
 .approved-badge {
-  color: #FFFFFF;
   width: 75px;
   background: #44C13C;
 }
 
 .cancel-badge {
-  color: #FFFFFF;
   width: 76px;
   background: #FF513A;
 }

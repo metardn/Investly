@@ -1,31 +1,20 @@
 .main-container {
-  position: absolute;
   width: 1270px;
   height: 1024px;
   left: 240px;
-  top: 0px;
-  // overflow-y: scroll;
 
   .main-title {
     display: flex;
-    flex-direction: row;
     align-items: center;
-    padding: 0px;
     gap: 8px;
-
-    position: absolute;
-    width: 209px;
     height: 34px;
     left: 36px;
     top: calc(50% - 34px/2 - 465px);
 
     h3 {
-      width: 177px;
       height: 34px;
-      font-style: normal;
       font-weight: 600;
       font-size: 28px;
-      line-height: 120%;
       color: #373F47;
     }
 
@@ -34,20 +23,12 @@
 }
 
 .right-top {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
   gap: 12px;
-
-  position: absolute;
-  width: 238px;
   height: 40px;
-  right: 36px;
+  right: 100px;
   top: calc(50% - 40px/2 - 465px);
 
   .new-btn {
-    display: flex;
     flex-direction: row;
     align-items: center;
     padding: 12px 12px 12px 20px;
@@ -57,101 +38,60 @@
     background: #4040F2;
     border-radius: 32px;
     border: none;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
 
     //button font
-    // font-family: 'General Sans';
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 100%;
-
     color: #FFFFFF;
-  }
-
-  .top-btn {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 12px;
-    gap: 8px;
-    width: 40px;
-    height: 40px;
-    background: #FFFFFF;
-    border: 1px solid #EAECEE;
-    border-radius: 32px;
-    flex: none;
-    flex-grow: 0;
   }
 }
 
-.metrics {
+.icon-btn {
   display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
-  gap: 24px;
+  align-items: center;
+  padding: 12px;
+  gap: 8px;
+  height: 40px;
+  background: #FFFFFF;
+  border: 1px solid #EAECEE;
+  border-radius: 32px;
+}
 
-  position: absolute;
-  width: 1127px;
-  height: 159px;
+.metrics {
+  gap: 24px;
   left: 36px;
   top: 88px;
 
   .metric-small {
-    box-sizing: border-box;
-
     width: 360px;
     height: 159px;
-    background: #FFFFFF;
-
     border: 1px solid #EAECEE;
     border-radius: 12px;
 
-    flex: none;
-    // order: 0;
-    flex-grow: 0;
-
     .metric-content {
-      position: absolute;
       width: 350px;
 
       .metric-name {
         position: absolute;
-        // width: 110px;
-        height: 27px;
         left: 24px;
         top: 24px;
-  
-        // font-family: 'General Sans';
-        font-style: normal;
         font-weight: 600;
         font-size: 18px;
-        line-height: 150%;
-  
         color: #373F47;
       }
   
       .metric-amount {
         position: absolute;
-        // width: 73px;
         height: 34px;
         left: 24px;
         top: 94px;
-        // font-family: 'General Sans';
-        font-style: normal;
         font-weight: 600;
         font-size: 28px;
         line-height: 120%;
-  
         color: #242D35;
       }
 
       .visualisation {
-        position: absolute;
         width: 95px;
         height: 95px;
         right: 32px;
@@ -164,7 +104,6 @@
         height: 24px;
         right: 62px;
         top: 66px;
-        opacity: 0.9;
       }
 
       .green-icon { color: #2BA52E; }
@@ -176,22 +115,13 @@
 
 
 .control-left {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
   gap: 12px;
-
-  position: absolute;
   width: 475px;
   height: 40px;
   left: 36px;
   top: 279px;
 
   .control-left-item {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
     align-items: center;
     padding: 12px 12px 12px 20px;
     height: 40px;
@@ -199,7 +129,6 @@
     border: 1px solid #EAECEE;
     border-radius: 32px;
     flex: none;
-    flex-grow: 0;
   }
 
   .c-left-btn {
@@ -216,16 +145,9 @@
 
     input::placeholder {
       width: 154px;
-
-      // font-family: 'General Sans';
-      font-style: normal;
       font-weight: 400;
       font-size: 14px;
-      line-height: 100%;
       color: #D6DADE;
-      flex: none;
-      order: 0;
-      flex-grow: 0;
     }
 
     input:focus-within {
@@ -235,44 +157,16 @@
 }
 
 .control-right {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  padding: 0px;
   gap: 8px;
-  position: absolute;
-  width: 176px;
-  height: 40px;
   left: 987px;
   top: 279px;
-
-  button {
-    box-sizing: border-box;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    // padding: 12px 12px 12px 20px;
-    gap: 8px;
-    height: 40px;
-    background: #FFFFFF;
-    border: 1px solid #EAECEE;
-    border-radius: 32px;
-    flex: none;
-    flex-grow: 0;
-  }
 
   .btn-customize {
     padding: 12px 12px 12px 20px;
   }
-
-  .btn-more {
-    padding: 12px;
-    width: 40px;
-  }
 }
 
 table {
-  position: absolute;
   width: 1127px;
   left: 36px;
   top: 335px;
@@ -282,13 +176,9 @@ table {
 
   thead {
     background: #FAFAFA;
-    font-style: normal;
     font-weight: 400;
     font-size: 12px;
-    line-height: 100%;
-    text-align: justify;
     color: #4F5B67;
-    width: 1127px;
 
     tr td {
       align-items: center;
@@ -297,29 +187,22 @@ table {
 
       i {
         color: #A8B0B9;
-        width: 16px;
-        height: 16px;
+        font-size: 12px;
       }
     }
   }
 
   tbody {
-    background: #FFFFFF;
-    font-style: normal;
     font-weight: 400;
     font-size: 14px;
-    line-height: 150%;
     color: #000000;
 
     i {
       color: #A8B0B9;
-      width: 16px;
       font-size: 12px;
-      height: 16px;
     }
 
     tr td {
-      // align-items: center;
       padding: 20px 36px 19px 24px;
       box-shadow: inset 0px -1px 0px #F1F1F1;
 
@@ -340,7 +223,6 @@ table {
   border-radius: 12px;
 
   //badge font 
-  font-style: normal;
   font-weight: 400;
   font-size: 12px;
   line-height: 100%;

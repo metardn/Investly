@@ -1,68 +1,68 @@
-<div class="main-container">
-  <button class="back-btn d-flex align-items-center"><i class="bi bi-arrow-left"></i>Go back</button>
-  <div class="right-top">
-    <button class="entry-btn">New entry<i class="bi bi-plus"></i></button>
-    <button class="top-btn"><i class="bi bi-bell"></i></button>
-    <button class="top-btn"><i class="bi bi-search"></i></button>
+<div class="main-container position-absolute">
+  <button class="back-btn d-flex position-absolute align-items-center" routerLink="/dashboard"><i class="bi bi-arrow-left"></i>Go back</button>
+  <div class="right-top position-absolute d-flex">
+    <button class="entry-btn d-flex text-white align-items-center">New entry<i class="bi bi-plus"></i></button>
+    <button class="top-btn d-flex align-items-center"><i class="bi bi-bell"></i></button>
+    <button class="top-btn d-flex align-items-center"><i class="bi bi-search"></i></button>
   </div>
-  <h2>Boston family home</h2>
-  <div class="mosaic">
+  <h2 class="position-absolute">Boston family home</h2>
+  <div class="mosaic position-absolute">
     <div *ngFor="let image of images">
-      <img [class]="image.style" [src]="image.url">
+      <img [class]="image.style" [src]="image.url" class="position-absolute">
     </div>
   </div>
-  <div class="overview">
-    <h4>Property overview</h4>
-    <span>Verified</span>
-    <div class="text-content">
+  <div class="overview position-absolute">
+    <h4 class="position-absolute">Property overview</h4>
+    <span class="position-absolute">Verified</span>
+    <div class="text-content position-absolute">
       <p>A beautiful suburban property investment within reach of the top Boston universities and bountiful shopping opportunities. The house was renovated by John Steeley of McNeely Peeley's in South Philly.</p>
       <p>Boasting eleventeen bedrooms, fourty bidets and a manscaping room this house is set to generate huge interest from the financial capital markets. Currently offered for joint investment on a pro rata deriviatives equine distribution model through venture capital star investments capital limited.</p>
       <p>Free viewings online or via wetransfer download buckets. Contact managing agent for counselling sessions.</p>
     </div>
   </div>
-  <h4 id="details">Details</h4>
-  <div class="side-section">
+  <h4 id="details" class="position-absolute">Details</h4>
+  <div class="side-section d-flex position-absolute">
     <div *ngFor="let detail of details">
       <div class="section-card">
-        <div class="text-content">
-          <i [class]="detail.icon"></i>
-          <label class="section-label">{{ detail.label }}</label>
-          <p class="section-body">{{ detail.body }}</p>
+        <div class="text-content position-absolute">
+          <i [class]="detail.icon" class="position-absolute"></i>
+          <label class="section-label position-absolute">{{ detail.label }}</label>
+          <p class="section-body position-absolute">{{ detail.body }}</p>
         </div>
       </div>
     </div>
   </div>
-  <div class="map-section">
-    <h4 class="map-title">Property location</h4>
-    <div class="map">
-      <img src="assets/map.jpg">
+  <div class="map-section position-absolute">
+    <h4 class="map-title position-absolute">Property location</h4>
+    <div class="map position-absolute">
+      <img class="position-absolute" src="assets/map.jpg">
     </div>
   </div>
-  <div class="similiar-prop">
-    <h4 class="similiar-title">Similiar available property</h4>
-    <div class="similar-cards">
+  <div class="similiar-prop position-absolute">
+    <h4>Similiar available property</h4>
+    <div class="similiar-cards position-absolute">
       <div *ngFor="let listing of listings">
-        <div class="card" [class]="listing.card">
+        <div class="card d-flex position-absolute" [class]="listing.card">
           <img [src]="listing.image">
-          <div class="text-content">
+          <div class="text-content d-flex">
             <h5>{{ listing.name }}</h5>
             <small>{{ listing.desc }}</small>
           </div>
-          <div class="meta-data">
-            <div class="data">
+          <div class="meta-data d-flex">
+            <div class="data d-flex align-items-center">
               <i class="bi bi-geo-alt"></i>
               <small>Boston</small>
             </div>
-            <div class="data">
+            <div class="data d-flex">
               <i class="bi bi-vr"></i>
               <small>5 bedroom</small>
             </div>
-            <div class="data">
+            <div class="data d-flex">
               <i class="bi bi-building"></i>
               <small>Villa</small>
             </div>
           </div>
-          <button>View listing details</button>
+          <button class="d-flex justify-content-center align-items-center">View listing details</button>
         </div>
       </div>
     </div>

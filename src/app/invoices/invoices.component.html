@@ -1,52 +1,52 @@
-<div class="main-container">
-  <div class="main-title">
+<div class="main-container position-absolute">
+  <div class="main-title position-absolute">
     <h3>Your invoices</h3>
     <i class="bi bi-caret-down-fill"></i>
   </div>
-  <div class="right-top">
-    <button class="new-btn">New listing<i class="bi bi-plus"></i></button>
-    <button class="top-btn"><i class="bi bi-bell"></i></button>
-    <button class="top-btn"><i class="bi bi-search"></i></button>
+  <div class="right-top position-absolute d-flex">
+    <button class="new-btn d-flex">New listing<i class="bi bi-plus"></i></button>
+    <button class="icon-btn"><i class="bi bi-bell"></i></button>
+    <button class="icon-btn"><i class="bi bi-search"></i></button>
   </div>
-  <div class="metrics">
+  <div class="metrics d-flex position-absolute">
     <div class="metric-small">
-      <div class="metric-content">
+      <div class="metric-content position-absolute">
         <h5 class="metric-name">Outstanding</h5>
         <h3 class="metric-amount">243</h3>
-        <div class="visualisation" echarts [options]="option1"></div>
+        <div class="visualisation position-absolute" echarts [options]="option1"></div>
         <i class="bi bi-arrow-down-right red-icon"></i>
       </div>
     </div>
     <div class="metric-small">
-      <div class="metric-content">
+      <div class="metric-content position-absolute">
         <h5 class="metric-name">Paid this week</h5>
         <h3 class="metric-amount">143</h3>
-        <div class="visualisation" echarts [options]="option2"></div>
+        <div class="visualisation position-absolute" echarts [options]="option2"></div>
         <i class="bi bi-arrow-up-right green-icon"></i>
       </div>
     </div>
     <div class="metric-small">
-      <div class="metric-content">
+      <div class="metric-content position-absolute">
         <h5 class="metric-name">Cancelled</h5>
         <h3 class="metric-amount">32</h3>
-        <div class="visualisation" echarts [options]="option3"></div>
+        <div class="visualisation position-absolute" echarts [options]="option3"></div>
         <i class="bi bi-arrow-up-right green-icon"></i>
       </div>
     </div>
   </div>
-  <div class="control-left">
-    <button class="control-left-item c-left-btn">Filter by<i class="bi bi-filter"></i></button>
-    <button class="control-left-item c-left-btn">Sort by<i class="bi bi-filter-left"></i></button>
-    <form class="control-left-item search-input">
+  <div class="control-left d-flex position-absolute">
+    <button class="control-left-item d-flex c-left-btn">Filter by<i class="bi bi-filter"></i></button>
+    <button class="control-left-item d-flex c-left-btn">Sort by<i class="bi bi-filter-left"></i></button>
+    <form class="control-left-item d-flex search-input">
       <input type="text" placeholder="Try 'Miami beachhouse'">
       <i class="bi bi-search"></i>
     </form>
   </div>
-  <div class="control-right">
-    <button class="btn-customize">Customize<i class="bi bi-gear"></i></button>
-    <button class="btn-more"><i class="bi bi-three-dots-vertical"></i></button>
+  <div class="control-right d-flex position-absolute">
+    <button class="btn-customize icon-btn">Customize<i class="bi bi-gear"></i></button>
+    <button class="icon-btn"><i class="bi bi-three-dots-vertical"></i></button>
   </div>
-  <table>
+  <table class="position-absolute">
     <thead>
       <tr>
         <td scope="col"><i class="bi bi-square"></i></td>
