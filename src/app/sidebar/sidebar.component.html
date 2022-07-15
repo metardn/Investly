@@ -1,75 +1,123 @@
-<div class="sidebar min-vh-100">
-  <div class="top-header">
-    <a href="" class="text-decoration-none investly">Investly<a class="text-decoration-none dot">.</a></a>
-  </div>
-  <div class="main-link">
-    <ul class="p-0 m-0">
-      <li routerLink="/dashboard">
-        <div class="sub-menu d-flex align-items-center">
-          <a routerLink="/dashboard"><i class="bi bi-folder"></i> Dashboard</a>
-          <div class="choosen-menu"></div>
+<div class="sidebar sticky">
+  <div class="d-flex flex-column align-items-center min-vh-100">
+    <div class="top-header d-none d-sm-inline">
+      <a class="text-decoration-none investly d-flex align-items-center justify-content-center mb-md-0 me-md-auto">
+        <span class="fs-5">
+          Investly<a class="text-decoration-none dot">.</a>
+        </span>
+      </a>
+    </div>
+    <ul class="p-0 nav nav-pills mb-sm-auto align-items-center align-items-sm-start">
+      <li routerLink="/dashboard" class="nav-item container-fluid">
+        <div class="row p-0 m-0 gx-0">
+          <div class="d-flex align-items-center col  py-3">
+            <a routerLink="/dashboard" class="nav-link p-0 align-middle ms-3">
+              <i class="bi bi-folder me-2"></i> 
+              <span class="ms-1 d-none d-lg d-lg-inline"> Dashboard</span>
+            </a>
+          </div>
+          <div class="choosen-menu col-1 d-flex justify-content-end py-3"></div>
         </div>
       </li>
-      <li routerLink="/available-units">
-        <div class="sub-menu d-flex align-items-center">
-          <a routerLink="/available-units"><i class="bi bi-building"></i> Available units</a>
-          <div class="choosen-menu"></div>
+      <li routerLink="/available-units" class="nav-item container-fluid">
+        <div class="row p-0 m-0 gx-0">
+          <div class="d-flex align-items-center col  py-3">
+            <a routerLink="/available-units" class="nav-link p-0 align-middle ms-3">
+              <i class="bi bi-building me-2"></i> 
+              <span class="ms-1 d-none d-lg d-lg-inline"> Available units</span>
+            </a>
+          </div>
+          <div class="choosen-menu col-1 d-flex justify-content-end py-3"></div>
         </div>
       </li>
-      <li routerLink="/invoices">
-        <div class="sub-menu d-flex align-items-center">
-          <a routerLink="/invoices"><i class="bi bi-shield-check"></i> Invoices</a>
-          <div class="choosen-menu"></div>
+      <li routerLink="/invoices" class="nav-item container-fluid">
+        <div class="row p-0 m-0 gx-0">
+          <div class="d-flex align-items-center col  py-3">
+            <a routerLink="/invoices" class="nav-link p-0 align-middle ms-3">
+              <i class="bi bi-shield-check me-2"></i> 
+              <span class="ms-1 d-none d-lg d-lg-inline"> Invoices</span>
+            </a>
+          </div>
+          <div class="choosen-menu col-1 d-flex justify-content-end py-3"></div>
         </div>
       </li>
-      <li routerLink="/projects">
-        <div class="sub-menu d-flex align-items-center">
-          <a routerLink="/projects"><i class="bi bi-clock"></i> Projects</a>
-          <div class="choosen-menu"></div>
+      <li routerLink="/projects" class="nav-item container-fluid">
+        <div class="row p-0 m-0 gx-0">
+          <div class="d-flex align-items-center col  py-3">
+            <a routerLink="/projects" class="nav-link p-0 align-middle ms-3">
+              <i class="bi bi-clock me-2"></i> 
+              <span class="ms-1 d-none d-lg d-lg-inline"> Projects</span>
+            </a>
+          </div>
+          <div class="choosen-menu col-1 d-flex justify-content-end py-3"></div>
         </div>
       </li>
-      <li>
-        <div class="sub-menu d-flex align-items-center">
-          <a><i class="bi bi-share"></i> Social media</a>
-          <div class="choosen-menu"></div>
+      <li class="nav-item container-fluid">
+        <div class="row p-0 m-0 gx-0">
+          <div class="d-flex align-items-center col  py-3">
+            <a class="nav-link p-0 align-middle ms-3">
+              <i class="bi bi-share me-2"></i> 
+              <span class="ms-1 d-none d-lg d-lg-inline"> Social media</span>
+            </a>
+          </div>
+          <div class="choosen-menu col-1 d-flex justify-content-end py-3"></div>
         </div>
       </li>
-      <li>
-        <div class="sub-menu d-flex align-items-center">
-          <a><i class="bi bi-columns-gap"></i> Integrations</a>
-          <div class="choosen-menu"></div>
+      <li class="nav-item container-fluid">
+        <div class="row p-0 m-0 gx-0">
+          <div class="d-flex align-items-center col  py-3">
+            <a class="nav-link p-0 align-middle ms-3">
+              <i class="bi bi-columns-gap me-2"></i> 
+              <span class="ms-1 d-none d-lg d-lg-inline"> Integrations</span>
+            </a>
+          </div>
+          <div class="choosen-menu col-1 d-flex justify-content-end py-3"></div>
         </div>
       </li>
-      <li routerLink="/documentation">
-        <div class="sub-menu d-flex align-items-center">
-          <a routerLink="/documentation"><i class="bi bi-bookmarks"></i> Documentation</a>
-          <div class="choosen-menu"></div>
+      <li routerLink="/documentation" class="nav-item container-fluid">
+        <div class="row p-0 m-0 gx-0">
+          <div class="d-flex align-items-center col  py-3">
+            <a routerLink="/documentation" class="nav-link p-0 align-middle ms-3">
+              <i class="bi bi-bookmarks me-2"></i> 
+              <span class="ms-1 d-none d-lg d-lg-inline"> Documentation</span>
+            </a>
+          </div>
+          <div class="choosen-menu col-1 d-flex justify-content-end py-3"></div>
         </div>
       </li>
     </ul>
-  </div>
-  <div class="sticky-footer">
-    <div class="bottom-link">
-      <ul class="p-0 m-0 ">
-        <li >
-          <div class="sub-menu d-flex align-items-center">
-            <a><i class="bi bi-gear"></i> Settings</a>
-            <div class="choosen-menu"></div>
+    <ul class="p-0 nav nav-pills mb-sm-auto align-items-center align-items-sm-start">
+      <li class="nav-item container-fluid">
+        <div class="row p-0 m-0 gx-0">
+          <div class="d-flex align-items-center col  py-3">
+            <a class="nav-link p-0 align-middle ms-3">
+              <i class="bi bi-gear me-2"></i> 
+              <span class="ms-1 d-none d-lg d-lg-inline"> Settings</span>
+            </a>
           </div>
-        </li>
-        <li>
-          <div class="sub-menu d-flex align-items-center">
-            <a><i class="bi bi-question-circle"></i> Help center</a>
-            <div class="choosen-menu"></div>
+          <div class="choosen-menu col-1 d-flex justify-content-end py-3"></div>
+        </div>
+      </li>
+      <li class="nav-item container-fluid">
+        <div class="row p-0 m-0 gx-0">
+          <div class="d-flex align-items-center col  py-3">
+            <a class="nav-link p-0 align-middle ms-3">
+              <i class="bi bi-question-circle me-2"></i> 
+              <span class="ms-1 d-none d-lg d-lg-inline"> Help center</span>
+            </a>
           </div>
-        </li>
-      </ul>
-    </div>
-    <div class="user-avatar-container">
-      <div class="user-avatar">
-        <img class="avatar rounded-circle" [src]="ava">
-        <div class="user-text">
-          <label for="">Louise Thompson</label>
+          <div class="choosen-menu col-1 d-flex justify-content-end py-3"></div>
+        </div>
+      </li>
+      <li></li>
+    </ul>
+    <div class="user-container py-3 mt-3">
+      <div class="row p-0 m-0 gx-0">
+        <div class="col-4">
+          <img class="avatar rounded-circle" [src]="ava">
+        </div>
+        <div class="col d-none d-lg d-lg-inline">
+          <label>Louise Thompson</label>
           <small>Enterprise plan</small>
         </div>
       </div>
