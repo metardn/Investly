@@ -1,75 +1,104 @@
-<div class="main-container position-absolute">
-  <div class="main-title position-absolute">
-    <h3>Available units</h3>
-  </div>
-  <div class="right-top position-absolute d-flex">
-    <button class="new-btn">New listing<i class="bi bi-plus"></i></button>
-    <button class="icon-btn d-flex"><i class="bi bi-bell"></i></button>
-    <button class="icon-btn d-flex"><i class="bi bi-search"></i></button>
-  </div>
-  <h4 class="title-1 position-absolute">Your favorites</h4>
-  <div class="micro-tiles d-flex position-absolute">
-    <div class="card">
-      <img [src]="images[0]">
-      <div class="text-content position-absolute">
-        <p>Shoreditch Apt</p>
-        <small class="position-absolute">10 December 2022</small>
+<div class="container-fluid">
+  <div class="mx-sm-5">
+    <div class="row py-3 mt-4 mb-3">
+      <div class="col">
+        <h3>Available units</h3>
       </div>
-    </div>
-    <div class="card">
-      <img [src]="images[1]">
-      <div class="text-content position-absolute">
-        <p>Shoreditch Apt</p>
-        <small class="position-absolute">10 December 2022</small>
-      </div>
-    </div>
-    <div class="last-card">
-      <div class="card">
-        <img [src]="images[2]">
-        <div class="text-content position-absolute">
-          <p>Shoreditch Apt</p>
-          <small class="position-absolute">10 December 2022</small>
+      <div class="col">
+        <div class="d-flex justify-content-end gap-12">
+          <button class="new-btn text-white d-flex align-items-center gap-1">New listings<i class="bi bi-plus"></i></button>
+          <button class="icon-btn"><i class="bi bi-bell d-flex align-items-center"></i></button>
+          <button class="icon-btn"><i class="bi bi-search d-flex align-items-center"></i></button>
         </div>
       </div>
-      <div class="fade-space position-absolute"></div>
-      <button class="position-absolute icon-btn d-flex"><i class="bi bi-chevron-right"></i></button>
     </div>
-  </div>
-  <h4 class="title-2 position-absolute">All listings</h4>
-  <div class="control-left d-flex position-absolute">
-    <button class="icon-btn d-flex c-left-btn">Filter by<i class="bi bi-filter"></i></button>
-    <button class="icon-btn d-flex c-left-btn">Sort by<i class="bi bi-filter-left"></i></button>
-    <form class="icon-btn d-flex search-input">
-      <input type="text" placeholder="Try 'Miami beachhouse'">
-      <i class="bi bi-search"></i>
-    </form>
-  </div>
-  <div class="control-right d-flex position-absolute">
-    <button class="btn-customize icon-btn d-flex">Customize<i class="bi bi-gear"></i></button>
-    <button class="btn-more icon-btn d-flex"><i class="bi bi-three-dots-vertical"></i></button>
-  </div>
-  <div class="listings d-flex position-absolute" *ngFor="let listing of listings">
-    <div [class]="listing.card" class="card">
-      <img [src]="listing.image" alt="">
-      <div class="text-content">
-        <h5>{{ listing.name }}</h5>
-        <small>{{ listing.desc }}</small>
-      </div>
-      <div class="meta-data d-flex">
-        <div class="data">
-          <i class="bi bi-geo-alt"></i>
-          <small>Boston</small>
-        </div>
-        <div class="data d-flex">
-          <i class="bi bi-vr"></i>
-          <small>5 bedroom</small>
-        </div>
-        <div class="data d-flex">
-          <i class="bi bi-building"></i>
-          <small>Villa</small>
+
+    <h4 class="mb-4">Your favorites</h4>
+    <div class="row">
+      <div class="col-md-4">
+        <div class="card py-2 px-4 my-2">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-2">
+              <img class="img-fav-card" [src]="images[0]">
+            </div>
+            <div class="col ms-md-2">
+              <p class="m-0">Shoreditch Apt</p>
+              <small>10 December 2022</small>
+            </div>
+          </div>
         </div>
       </div>
-      <button>View listing details</button>
+      <div class="col-md-4">
+        <div class="card py-2 px-4 my-2">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-2">
+              <img class="img-fav-card" [src]="images[1]">
+            </div>
+            <div class="col ms-md-2">
+              <p class="m-0">Shoreditch Apt</p>
+              <small>10 December 2022</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card py-2 px-4 last-card my-2">
+          <div class="row d-flex align-items-center">
+            <div class="col-lg-2">
+              <img class="img-fav-card" [src]="images[2]">
+            </div>
+            <div class="col ms-md-2">
+              <p class="m-0">Shoreditch Apt</p>
+              <small>10 December 2022</small>
+            </div>
+            <div class="col-2">
+              <button class="icon-btn d-flex align-items-center next-btn ms-sm-3"><i class="bi bi-chevron-right"></i></button>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
+
+    <h4 class="my-4">All listings</h4>
+    <div class="row">
+      <div class="col d-flex gap-12">
+        <button class="icon-btn bg-white d-flex align-items-center">Filter by<i class="bi bi-filter"></i></button>
+        <button class="icon-btn bg-white d-flex align-items-center">Sort by<i class="bi bi-filter-left"></i></button>
+        <form class="d-flex align-items-center">
+          <input type="text" placeholder="Try 'Miami beachhouse'">
+          <i class="bi bi-search d-flex align-items-center"></i>
+        </form>
+      </div>
+      <div class="col d-flex justify-content-end gap-12">
+        <button class="icon-btn bg-white d-flex align-items-center gap-1 customise-btn">Customise <i class="bi bi-gear"></i></button>
+        <button class="icon-btn bg-white d-flex align-items-center"><i class="bi bi-three-dots-vertical"></i></button>
+      </div>
+    </div>
+
+    <div class="row p-0 mb-5 mt-3">
+      <div class="col-sm-4 my-3 d-flex align-items-stretch" *ngFor="let listing of listings">
+        <div class="card p-4">
+          <img [src]="listing.image" class="listing-img">
+          <h5 class="mt-4">{{listing.name}}</h5>
+          <small class="my-2">{{listing.desc}}</small>
+          <div class="row p-0 mt-2 mb-4">
+            <div class="col-sm-3">
+              <i class="bi bi-geo-alt"></i>
+              <small> Boston</small>
+            </div>
+            <div class="col-sm-4">
+              <i class="bi bi-vr"></i>
+              <small> 5 bedroom</small>
+            </div>
+            <div class="col-sm">
+              <i class="bi bi-building"></i>
+              <small> Villa</small>
+            </div>
+          </div>
+          <button routerLink="/property-listing" class="bg-white detail-btn mb-0 mt-auto">View listing details</button>
+        </div>
+      </div>
+    </div>
+
   </div>
 </div>
