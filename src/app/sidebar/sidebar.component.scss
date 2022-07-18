@@ -59,10 +59,6 @@ ul  li {
       display:block;
   }
 
-  label {
-    // overflow: hidden;
-    text-overflow: ellipsis;
-    // display: -webkit-box;
-    // max-height: 30px;
-  }
+  label { 
+    text-overflow: ellipsis; }
 }

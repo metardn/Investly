@@ -1,139 +1,73 @@
-<div class="main-container">
-  <h3 class="title">What do you need help with today?</h3>
-  <form class="search-input">
-    <input type="text" placeholder="Enter your question here">
-    <i class="bi bi-search d-flex align-items-center"></i>
-  </form>
-  <div class="icon-card">
-    <div class="card-row">
-      <div class="card">
-        <div class="icon-space">
-          <i class="bi bi-person-circle"></i>
-        </div>
-        <h5>Profile and settings</h5>
-        <small class="body">Learn how to configure your profile, set up notifications and customise.</small>
-        <small class="more">Learn more</small>
-      </div>
-      <div class="card">
-        <div class="icon-space">
-          <i class="bi bi-building"></i>
-        </div>
-        <h5>Property listings</h5>
-        <small class="body">How our listings work, how to post new listings and how to respond to others.</small>
-        <small class="more">Learn more</small>
-      </div>
-      <div class="card">
-        <div class="icon-space">
-          <i class="bi bi-chat-left-text-fill"></i>
-        </div>
-        <h5>Messaging</h5>
-        <small class="body">How our listings work, how to post new listings and how to respond to others.</small>
-        <small class="more">Learn more</small>
-      </div>
-      <div class="card">
-        <div class="icon-space">
-          <i class="bi bi-clock"></i>
-        </div>
-        <h5>Projects</h5>
-        <small class="body">How our listings work, how to post new listings and how to respond to others.</small>
-        <small class="more">Learn more</small>
-      </div>
+<div class="container-fluid">
+  <div class="mx-sm-5">
+    <h3 class="d-flex justify-content-center mt-5 mb-4">What do you need help with today?</h3>
+    <div class="d-flex justify-content-center">
+      <form class="bg-white d-flex flex-row justify-content-between align-items-center">
+        <input type="text" placeholder="Enter your question here">
+        <i class="bi bi-search"></i>
+      </form>
     </div>
-    <div class="card-row">
-      <div class="card">
-        <div class="icon-space">
-          <i class="bi bi-activity"></i>
-        </div>
-        <h5>Integrations</h5>
-        <small class="body">How to set up and manage your unique integration environment.</small>
-        <small class="more">Learn more</small>
-      </div>
-      <div class="card">
-        <div class="icon-space">
-          <i class="bi bi-share-fill"></i>
-        </div>
-        <h5>Social media</h5>
-        <small class="body">How to use social media in conjunction with investly to maximise efficacy.</small>
-        <small class="more">Learn more</small>
-      </div>
-      <div class="card">
-        <div class="icon-space">
-          <i class="bi bi-shield-fill-check"></i>
-        </div>
-        <h5>Invoices</h5>
-        <small class="body">How to set up, manage, pay, and send invoices within your application.</small>
-        <small class="more">Learn more</small>
-      </div>
-      <div class="card">
-        <div class="icon-space">
-          <i class="bi bi-folder"></i>
-        </div>
-        <h5>Dashboard</h5>
-        <small class="body">How to configure and personalise the dashboard experience.</small>
-        <small class="more">Learn more</small>
-      </div>
-    </div>
-  </div>
-  <h4 class="title-2 quickstart">Quick start guides</h4>
-  <div class="simple-card">
-    <div class="simple-card-row">
-      <div class="card">
-        <h5>Post a property listing</h5>
-        <small>How to set up and manage your unique integration environment.</small>
-      </div>
-      <div class="card">
-        <h5>Editing an existing listing</h5>
-        <small>How to set up and manage your unique integration environment.</small>
-      </div>
-      <div class="card">
-        <h5>Add a new user profile</h5>
-        <small>How to set up and manage your unique integration environment.</small>
-      </div>
-      <div class="card">
-        <h5>Upgrade your plan</h5>
-        <small>How to set up and manage your unique integration environment.</small>
-      </div>
-    </div>
-    <div class="simple-card-row">
-      <div class="card">
-        <h5>Delete your listings</h5>
-        <small>How to set up and manage your unique integration environment.</small>
-      </div>
-      <div class="card">
-        <h5>Creating a new chart</h5>
-        <small>How to set up and manage your unique integration environment.</small>
-      </div>
-      <div class="card">
-        <h5>Set up price alerts</h5>
-        <small>How to set up and manage your unique integration environment.</small>
-      </div>
-      <div class="card">
-        <h5>Modify your invoices</h5>
-        <small>How to set up and manage your unique integration environment.</small>
-      </div>
-    </div>
-  </div>
-  <h4 class="title-2 recently">Recently viewed items</h4>
-  <h4 class="title-2 most-pop">Most popular guides</h4>
 
-  <div class="col-card col1">
-    <a>Add new user profile</a>
-    <a>How to save listing templates</a>
-    <a>Incoice frequently ask questions</a>
-  </div>
-  <div class="col-card col2">
-    <a>Transferring your listings</a>
-    <a>Customizing your dashboard</a>
-    <a>Deleteing expired listings</a>
-  </div>
-  <div class="col-card col3">
-    <a>How to receive an invoice</a>
-    <a>Purchasing company credits</a>
-    <a>How to migrate your data</a>
-  </div>
-  <div class="col-card col4">
-    <a>Sending a listing owner a message</a>
-    <a>Deleting unwanted message</a>
-    <a>Setting up a business account</a>
+    <div class="row mt-5 mb-3">
+      <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch"  *ngFor="let icon_card of icon_cards">
+        <div class="card p-4 my-3">
+          <div class="row d-flex align-items-center">
+            <div class="col-2">
+              <div class="icon d-flex align-items-center justify-content-center">
+                <i [class]="icon_card.icon"></i>
+              </div>
+            </div>
+            <div class="col">
+              <h5> {{ icon_card.title }} </h5>
+            </div>
+          </div>
+          <small class="my-3">{{ icon_card.body }}</small>
+          <small class="more mb-0 mt-auto">Learn more</small>
+        </div>
+      </div>
+    </div>
+
+    <h4 class="mb-3">Quick start guides</h4>
+    <div class="row mb-4">
+      <div class="col-sm-6 col-md-4 col-lg-3 d-flex align-items-stretch" *ngFor="let quick_card of quick_cards">
+        <div class="card p-4 my-3">
+          <h5>{{ quick_card }}</h5>
+          <small class="mt-2">How to set up and manage your unique integration environment.</small>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mb-5">
+      <div class="col">
+        <h4 class="mb-4">Recently viewed items</h4>
+        <div class="row">
+          <div class="col d-flex flex-column">
+            <a href="">Add new user profile</a>
+            <a href="">How to save listing templates</a>
+            <a href="">Invoice frequently ask questions</a>
+          </div>
+          <div class="col d-flex flex-column">
+            <a href="">Transferring your listings</a>
+            <a href="">Customizing your dashboard</a>
+            <a href="">Deleting expired listings</a>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <h4 class="mb-4">Most popular guides</h4>
+        <div class="row">
+          <div class="col d-flex flex-column">
+            <a href="">How to receive an invoice</a>
+            <a href="">Purchasing company credits</a>
+            <a href="">How to migrate your data</a>
+          </div>
+          <div class="col d-flex flex-column">
+            <a href="">Sending a listing owner a message</a>
+            <a href="">Deleting unwanted message</a>
+            <a href="">Setting up a business account</a>
+          </div>
+        </div>
+      </div>
+    </div>
   </div>
 </div>
