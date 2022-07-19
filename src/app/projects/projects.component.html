@@ -1,29 +1,39 @@
-<div class="main-container position-absolute">
-  <div class="nav-main position-absolute d-flex">
-    <h3>Current projects</h3>
-    <i class="bi bi-caret-down-fill"></i>
-  </div>
-  <div class="nav-control d-flex position-absolute">
-    <button class="new-btn d-flex">New project<i class="bi bi-plus"></i></button>
-    <button class="nav-btn d-flex"><i class="bi bi-bell"></i></button>
-    <button class="nav-btn d-flex"><i class="bi bi-search"></i></button>
-  </div>
-  <div class="control-bar position-absolute">
-    <div class="control-left position-absolute d-flex">
-      <button class="control-left-item d-flex c-left-btn">Filter by<i class="bi bi-filter"></i></button>
-      <button class="control-left-item d-flex c-left-btn">Sort by<i class="bi bi-filter-left"></i></button>
-      <form class="control-left-item d-flex search-input">
-        <input type="text" placeholder="Try 'Miami beachhouse'">
-        <i class="bi bi-search"></i>
-      </form>
-    </div>
-    <div class="control-right position-absolute d-flex">
-      <button class="btn-customize">Refresh<i class="bi bi-arrow-clockwise"></i></button>
-      <button class="btn-customize">Customize<i class="bi bi-gear"></i></button>
-      <button class="btn-more"><i class="bi bi-three-dots-vertical"></i></button>
+<div class="container-fluid">
+  <div class="mx-sm-5">
+    <div class="row py-3 mt-4 mb-3">
+      <div class="col d-flex gap-3 align-items-center gray-500">
+        <h3>Current projects</h3>
+        <i class="bi bi-caret-down-fill"></i>
+      </div>
+      <div class="col">
+        <div class="d-flex justify-content-end gap-12">
+          <button class="new-btn text-white d-flex align-items-center gap-1">New project<i class="bi bi-plus"></i></button>
+          <button class="icon-btn"><i class="bi bi-bell d-flex align-items-center"></i></button>
+          <button class="icon-btn"><i class="bi bi-search d-flex align-items-center"></i></button>
+        </div>
+      </div>
     </div>
   </div>
-  <table>
+
+  <div class="mt-4 control-bar py-3">
+    <div class="row mx-sm-5">
+      <div class="col-sm d-flex gap-12">
+        <button class="icon-btn bg-white d-flex align-items-center gap-1">Filter by<i class="bi bi-filter gray-400"></i></button>
+        <button class="icon-btn bg-white d-flex align-items-center gap-1">Sort by<i class="bi bi-filter-left gray-400"></i></button>
+        <form class="d-flex align-items-center">
+          <input type="text" placeholder="Try 'Miami beachhouse'">
+          <i class="bi bi-search d-flex align-items-center"></i>
+        </form>
+      </div>
+      <div class="col-sm-3 d-flex justify-content-end gap-12">
+        <button class="icon-btn bg-white d-flex align-items-center gap-1 customise-btn">Refresh<i class="bi bi-arrow-clockwise gray-400"></i></button>
+        <button class="icon-btn bg-white d-flex align-items-center gap-1 customise-btn">Customise <i class="bi bi-gear gray-400"></i></button>
+        <button class="icon-btn bg-white d-flex align-items-center"><i class="bi bi-three-dots-vertical"></i></button>
+      </div>
+    </div>
+  </div>
+
+  <table class="container-fluid mb-5">
     <thead>
       <tr>
         <td scope="col"><i class="bi bi-square"></i></td>
@@ -40,7 +50,7 @@
       <tr *ngFor="let project of projects">
         <td><i class="bi bi-square"></i></td>
         <td><i class="bi bi-person-video3"></i> {{ project.name }}</td>
-        <td><div class="badge-status" [class]="project.status_type">{{ project.status }}</div></td>
+        <td><div class="badge-status text-white" [class]="project.status_type">{{ project.status }}</div></td>
         <td><img [src]="project.brand_logo" class="logo rounded-circle"> {{ project.brand }}</td>
         <td class="d-flex">
           <div *ngFor="let image of project.contributors">
