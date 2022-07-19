@@ -1,11 +1,3 @@
-.new-btn {
-  background: #4040F2;
-  border-radius: 32px;
-  border: none;
-  height: 40px;
-  padding: 12px 12px 12px 20px;
-}
-
 form {
   border: 1px solid #EAECEE;
   border-radius: 32px;
@@ -14,17 +6,6 @@ form {
   height: 40px;
 
   input { border: none; }
-}
-
-input::placeholder {
-  font-size: 14px;
-  color: #D6DADE;
-}
-
-input:focus-within { outline: none; }
-
-.customise-btn {
-  padding: 12px 12px 12px 20px;
 }
 
 .control-bar {

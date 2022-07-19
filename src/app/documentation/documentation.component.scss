@@ -14,13 +14,6 @@ form {
   }
 }
 
-input::placeholder {
-  font-size: 14px;
-  color: #D6DADE;
-}
-
-input:focus-within { outline: none; }
-
 .card {
   border-radius: 8px;
 
@@ -50,6 +43,4 @@ h4, h3 {
   color: #373F47;
 }
 
-a {
-  color: #4F5B67;
-}
+a { color: #4F5B67; }
