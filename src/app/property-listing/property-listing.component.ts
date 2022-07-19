@@ -37,15 +37,15 @@ export class PropertyListingComponent implements OnInit {
     },
     {
       "url" : "assets/mosaic/img3.jpg",
-      "style" : "img3"
+      "style" : "img2"
     },
     {
       "url" : "assets/mosaic/img4.jpg",
-      "style" : "img4"
+      "style" : "img2"
     },
     {
       "url" : "assets/mosaic/img5.jpg",
-      "style" : "img5"
+      "style" : "img2"
     }
   ]
 
