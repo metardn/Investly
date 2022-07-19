@@ -4,6 +4,16 @@
   border: 1px solid #EAECEE;
   border-radius: 32px;
   height: 40px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.icon-btn:hover {
+  transition: 0,7s;
+  background: #FAFAFA;
+  transform: translateY(-1px);
+  i {
+    color: #0C1116;
+  }
 }
 
 .new-btn {
@@ -12,10 +22,26 @@
   border: none;
   height: 40px;
   padding: 12px 12px 12px 20px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.new-btn:hover {
+  transition: 0,7s;
+  background-color: #3333D1;
+  transform: translateY(-1px);
 }
 
 .customise-btn {
   padding: 12px 12px 12px 20px;
+}
+
+form {
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+form:hover {
+  transition: 0,7s;
+  transform: translateY(-1px);
 }
 
 input::placeholder {
