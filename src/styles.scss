@@ -7,7 +7,12 @@
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
 }
 
-.icon-btn:hover {
+.detail-btn {
+  background: #FFFFFF;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+
+.icon-btn:hover, .detail-btn:hover {
   transition: 0,7s;
   background: #FAFAFA;
   transform: translateY(-1px);
